@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huangchunting.github.io</id>
     <title>“行”的博客</title>
-    <updated>2020-05-17T03:51:14.169Z</updated>
+    <updated>2020-05-17T03:56:03.637Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huangchunting.github.io"/>
     <link rel="self" href="https://huangchunting.github.io/atom.xml"/>
@@ -10,4 +10,16 @@
     <logo>https://huangchunting.github.io/images/avatar.png</logo>
     <icon>https://huangchunting.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, “行”的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[博客由此开始]]></title>
+        <id>https://huangchunting.github.io/post/bo-ke-you-ci-kai-shi/</id>
+        <link href="https://huangchunting.github.io/post/bo-ke-you-ci-kai-shi/">
+        </link>
+        <updated>2020-05-17T03:52:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>第一篇博客，Gridea搭建的博客是真的不好用，将就中~~~~~</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第一篇博客，Gridea搭建的博客是真的不好用，将就中~~~~~</p>
+<!-- more -->
+]]></content>
+    </entry>
 </feed>

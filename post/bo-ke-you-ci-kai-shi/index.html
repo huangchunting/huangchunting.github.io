@@ -3,7 +3,7 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
         <meta charset="utf-8">
         <meta name="referrer" content="never">
-        <title>“行”的博客</title>
+        <title>博客由此开始 | “行”的博客</title>
         <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
         <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://huangchunting.github.io/styles/main.css">
@@ -17,9 +17,9 @@
 
     </head>
     <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
-        <header class="header mdui-m-b-3">
-                          <button class="mdui-btn daohang mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
-                <ul class="mdui-menu " id="demo-attr-cascade">
+        <header class="index-img mdui-m-b-3"  style="background-image: url(https://huangchunting.github.io/post-images/bo-ke-you-ci-kai-shi.jpg);" >
+                          <button class="mdui-btn  mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
+                <ul class="mdui-menu" id="demo-attr-cascade">
                 
                         <li class="mdui-menu-item">
                           <a href="/" class="mdui-ripple">首页</a>
@@ -38,56 +38,98 @@
                         </li>
                 
                       </ul>
-                      <div class="mdui-text-center">
-                      <div class="mdui-typo-display-4 mdui-m-b-3 index-title">“行”的博客</div>
-                      <div class="mdui-typo-headline">认识美好的世界</div>
-                      </div>
 
         </header>
-        <div class="mdui-container">
+        <div class="mdui-container post">
                 <div class="mdui-row">
-                        <div class="mdui-col-md-10 mdui-col-offset-md-1 ">
- 
-                           
-  
+                        <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
+                         <article class="mdui-shadow-10 mdui-p-a-2 post-list">
+                           <div class="mdui-typo-display-1 mdui-m-b-3">博客由此开始</div>
+                           <a  class="index-list-biaoqian ">2020-05-17</a>
+                           <div class="mdui-typo mdui-m-t-3 post-neirong"><p>第一篇博客，Gridea搭建的博客是真的不好用，将就中~~~~~</p>
+<!-- more -->
+</div>
+                              <div class="mdui-divider mdui-m-t-3"></div>
+                              <div class="mdui-row-xs-2 mdui-m-t-2">
+  <div class="mdui-col"> </div>
+ <div class="mdui-col"></div>
+                                </div>
+                                <div class="mdui-divider mdui-m-t-2"></div>
    
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+<div id="gitalk-container"></div>
 
+<script>
 
-                               <div class="mdui-typo-display-1 mdui-m-b-2 mdui-m-l-1">
-                               <div class="mdui-row"><div class="mdui-col-xs-12">2020</div>
-                               </div>
-                                <div class="mdui-row-md-3 mdui-row-xs-1">
-                               
+  var gitalk = new Gitalk({
+    clientID: '5e094c962b97f5c3b825',
+    clientSecret: 'a9e966378326a918a1db04b297e47218401a9160',
+    repo: 'huangchunting.github.io',
+    owner: 'huangchunting',
+    admin: ['huangchunting'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
-                                    <div class="mdui-col mdui-p-a-1">
-                                       <article class="archives-list mdui-shadow-15  mdui-hoverable ">
-                                           <a href="https://huangchunting.github.io/post/bo-ke-you-ci-kai-shi/">
-                                           <div class="archives-img"  style="background-image:url(https://huangchunting.github.io/post-images/bo-ke-you-ci-kai-shi.jpg" >
-                                           </div>
-                                           <div class="mdui-p-a-2">
-                                           <div class="mdui-typo-headline mdui-text-truncate index-list-title">博客由此开始</div>
-                                           <div class="mdui-typo-title mdui-m-t-1 mdui-text-color-blue-grey-200">2020-05-17</div>
-                                           </div>
-                                        </a>
-                                       </article> 
-                                    </div>
-                                    
-             
-            
-              
-                                  </div>
-                                    <nav class="mdui-m-y-3">
-                         
-                         
-                         </nav>
-                         
+ <script src="https://huangchunting.github.io/media/scripts/Valine.min.js"></script>
+ <div class="comment"></div>
+
+<script>
+      new Valine({
+            el: '.comment',
+
+
+
+            path: window.location.pathname,
+            pageSize: 30,
+            avatar:'mm', 
+       })
+
+    </script> 
+<script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
+                         </article>
+                 <div class="toc-container mdui-float-right">
+                
+              </div>
+
                         </div>
                  </div>
-          </div>
-          </div>
+          
         </div>
-         </div>
+        <script data-no-instant>
+    (function ($) {
+        $.extend({
+            adamsOverload: function () {
+                $.viewImage({
+                    'target'  : '.post-neirong img',
+                    'exclude' : '.vsmile-icons img , .song-links-item img',
+                    'delay'   : 300
+                });
+            }
+        });
+    })(jQuery);
+    jQuery.adamsOverload();
+</script>
         <footer class="footer mdui-m-t-5 mdui-text-center">
                <nav class="social-links">
                       <ul>
